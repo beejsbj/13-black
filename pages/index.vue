@@ -1,0 +1,4 @@
+<template>
+  <HeroLanding />
+  <ProcessOverview />
+</template>

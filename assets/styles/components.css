@@ -1,0 +1,125 @@
+/* buttons and icons and smaller reusable bits here */
+
+@import "forms.css";
+
+/* scrollbar */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: var(--line-width); /* Firefox */
+}
+/* This part is for the scrollbar track / */
+*::-webkit-scrollbar {
+  width: var(--line-width);
+  height: var(--line-width);
+}
+
+/* / This part is for the track (the part that the thumb slides across) / */
+::-webkit-scrollbar-track {
+  box-shadow: var(--shadow);
+  border-radius: var(--corners);
+}
+
+/* / This part is for the thumb (the part you drag) / */
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-color);
+  border-radius: var(--corners);
+}
+
+/* / This part is for the thumb when it's being hovered over  */
+::-webkit-scrollbar-thumb:hover {
+  filter: brightness(1.2);
+}
+
+/* backgrounds  */
+
+/* .dot-pattern {
+  background-image: var(--points);
+  background-size: 1rem;
+} */
+
+/* button */
+
+.button {
+  background: transparent;
+  border: unset;
+  display: flex;
+  align-items: center;
+  padding: 0.5em 2em;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  outline: unset;
+  isolation: isolate;
+}
+
+.button::before {
+  /*frame*/
+  content: "";
+  background: var(--color);
+  /* 	aspect-ratio: 1 / 1.5; */
+
+  transform-origin: right;
+
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+.button::after {
+  /*door*/
+  content: "";
+  background: var(--paper);
+  /* 	aspect-ratio: 1 / 1.5; */
+  position: absolute;
+
+  inset: 0;
+  transform-origin: left;
+  transform: perspective(600px) rotateY(10deg);
+  transition: 0.2s ease-in-out;
+  z-index: -1;
+}
+
+.button:active {
+  color: var(--paper);
+}
+
+.button:hover::after {
+  transform: perspective(600px) rotateY(20deg);
+}
+
+.button:active::after {
+  transform: perspective(600px) rotateY(80deg);
+  transition: 0.1s;
+}
+
+/*  */
+
+:is(a, button).text {
+  color: var(--ink);
+  text-decoration: none;
+  padding: 0.25em;
+  position: relative;
+
+  isolation: isolate;
+}
+
+p :is(a, button).text {
+  padding: unset;
+  display: inline-block;
+}
+
+:is(a, button).text::before {
+  content: "";
+  position: absolute;
+  height: var(--line-width-s);
+  width: 50%;
+  bottom: 0;
+  left: 0;
+
+  background: var(--color);
+  transition: 0.2s;
+}
+
+:is(a, button).text:is(:hover, :focus-visible)::before {
+  width: 110%;
+}

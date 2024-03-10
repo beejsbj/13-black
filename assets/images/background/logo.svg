@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 423 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-390.98,-1733.57)">
+        <g transform="matrix(1,0,0,1,-16973.4,116.832)">
+            <g transform="matrix(0.764336,0,0,0.764335,7326.43,-1419.2)">
+                <g id="Logo-Here" serif:id="Logo Here" transform="matrix(2.99331,0,0,2.99331,13131.7,4054.98)">
+                    <text x="0px" y="0px" style="font-family:'Unbounded-Regular_Medium', 'Unbounded';font-size:36px;fill:rgb(239,240,238);">13Black</text>
+                </g>
+                <g transform="matrix(0.995444,0,0,0.995444,11121,-2131.07)">
+                    <g transform="matrix(1,0,0,1,2498.29,6123.51)">
+                        <path d="M78.246,7.5L25.283,7.5L66.418,13.739L66.418,85.67L21.754,92.486L21.754,92.5L78.246,92.5L78.246,7.5Z" style="fill:rgb(239,240,238);fill-rule:nonzero;"/>
+                    </g>
+                    <g transform="matrix(1,0,0,1,2498.29,6123.51)">
+                        <path d="M60.286,47.107C59.227,47.107 58.368,47.966 58.368,49.025C58.368,50.084 59.227,50.943 60.286,50.943C61.345,50.943 62.204,50.084 62.204,49.025C62.204,47.965 61.346,47.107 60.286,47.107Z" style="fill:rgb(239,240,238);fill-rule:nonzero;"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

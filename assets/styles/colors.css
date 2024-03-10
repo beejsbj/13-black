@@ -1,0 +1,96 @@
+html {
+  /* Black and white */
+  --black: hsla(240, 100%, 1%, 1);
+  --white: hsla(94, 7%, 94%, 1);
+
+  --gray: hsla(0, 0%, 50%, 1);
+
+  --gray-light: hsla(0, 0%, 71%, 1);
+  --gray-lighter: hsla(0, 0%, 90%, 1);
+
+  --gray-dark: hsla(0, 0%, 26%, 1);
+  --gray-darker: hsla(0, 0%, 15%, 1);
+
+  /* Colors */
+
+  /* #todo replacce the light and dark with color-mix eventually */
+
+  /* hsla(45, 69%, 96%, 1.00) */
+  --hue: 45;
+  --saturation: 70%;
+  --color: hsla(var(--hue), var(--saturation), 95%, 1);
+
+  --color-light: color-mix(
+    in hsl,
+    var(--color),
+    hsla(var(--hue), var(--saturation), 100%, 1)
+  );
+  --color-lighter: color-mix(
+    in hsl,
+    var(--color-light),
+    hsla(var(--hue), var(--saturation), 100%, 1)
+  );
+  --color-lightest: color-mix(
+    in hsl,
+    var(--color-lighter),
+    hsla(var(--hue), var(--saturation), 100%, 1)
+  );
+  --color-dark: color-mix(
+    in hsl,
+    var(--color),
+    hsla(var(--hue), var(--saturation), 0%, 1)
+  );
+  --color-darker: color-mix(
+    in hsl,
+    var(--color-dark),
+    hsla(var(--hue), var(--saturation), 0%, 1)
+  );
+  --color-darkest: color-mix(
+    in hsl,
+    var(--color-darker),
+    hsla(var(--hue), var(--saturation), 0%, 1)
+  );
+
+  --success: hsla(122, 85%, 65%, 1);
+  --warning: hsla(44, 85%, 65%, 1);
+  --error: hsla(0, 85%, 65%, 1);
+
+  /* Gradients */
+  --gradient-direction: 130deg;
+
+  --gradient-dark: linear-gradient(
+    var(--gradient-direction),
+    var(--paper) 35%,
+    var(--gray-darker)
+  );
+
+  --gradient-light: linear-gradient(
+    var(--gradient-direction),
+    var(--gray-light) 35%,
+    var(--white)
+  );
+
+  --gradient-color: linear-gradient(
+    var(--gradient-direction),
+    var(--color) 35%,
+    var(--white)
+  );
+
+  --paper: var(--black);
+  --ink: var(--white);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+  }
+}
+
+/*@media (prefers-color-scheme: light) {
+	 html {
+		 --paper: var(--white);
+		--ink: var(--black);
+		--color-darker: var(--color-lighter);
+		--color-dark: var(--color-light); 
+	 }
+  }
+  */
