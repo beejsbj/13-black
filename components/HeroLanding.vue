@@ -15,7 +15,7 @@ const naee = "hi";
         </p>
       </text-content>
 
-      <button class="button loud-voice">Get in Touch</button>
+      <button class="button attention-voice">Get in Touch</button>
     </inner-column>
 
     <div class="spade-bg">

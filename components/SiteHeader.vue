@@ -6,20 +6,7 @@ import { NuxtLink } from '#build/components';
         <picture class="logo">
           <img src="@/assets/images/logo.svg" alt="13Black" />
         </picture>
-        <nav>
-          <ul>
-            <li>
-              <NuxtLink class="text" href="#about-section">Home</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink class="text" href="#speaker-section">About</NuxtLink>
-            </li>
-            <li><NuxtLink class="text" href="#register">Contact</NuxtLink></li>
-            <li class="toggle">
-              <!-- <ToggleLight /> -->
-            </li>
-          </ul>
-        </nav>
+        <SiteNav />
       </mast-head>
     </inner-column>
   </header>
@@ -31,7 +18,7 @@ header {
 }
 
 inner-column {
-  padding: var(--space-s); /* a loose default */
+  padding: var(--space-l) var(--space-s); /* a loose default */
 }
 
 mast-head {
@@ -40,17 +27,11 @@ mast-head {
   align-items: center;
 }
 
-nav ul {
-  display: flex;
-  gap: var(--space-l);
-  justify-content: space-between;
-}
+.logo {
+  max-width: 130px;
 
-nav a {
-  color: var(--white);
-
-  @media (max-width: 500px) {
-    font-size: var(--step--1);
+  @media (min-width: 768px) {
+    max-width: 300px;
   }
 }
 </style>

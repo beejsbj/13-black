@@ -65,6 +65,20 @@ const socials = ref({
 
 <template>
   <footer>
+    <section class="links">
+      <inner-column>
+        <nav v-for="nav in navs" :key="nav.heading">
+          <h3 class="teaser-voice">{{ nav.heading }}</h3>
+          <ul>
+            <li v-for="link in nav.links" :key="link.name">
+              <NuxtLink class="text" :href="link.link">{{
+                link.name
+              }}</NuxtLink>
+            </li>
+          </ul>
+        </nav>
+      </inner-column>
+    </section>
     <picture class="logo">
       <img src="@/assets/images/footer-logo.svg" alt="13Black" />
     </picture>
@@ -72,7 +86,8 @@ const socials = ref({
 </template>
 <style scoped>
 footer {
-  background: linear-gradient(0deg, transparent, var(--paper) 80%),
+  padding-top: var(--space-l);
+  background: linear-gradient(0deg, transparent, var(--paper) 50%),
     var(--points);
   /* color: white; */
   position: sticky;
@@ -82,10 +97,16 @@ footer {
   overflow: hidden;
 }
 
+.links inner-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
 .logo {
   width: 100%;
 
   position: relative;
   bottom: -10px;
+  padding-top: var(--space-l);
 }
 </style>
