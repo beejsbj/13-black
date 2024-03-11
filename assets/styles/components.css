@@ -5,12 +5,12 @@
 /* scrollbar */
 * {
   -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: var(--line-width); /* Firefox */
+  scrollbar-width: var(--line-width-s); /* Firefox */
 }
 /* This part is for the scrollbar track / */
 *::-webkit-scrollbar {
-  width: var(--line-width);
-  height: var(--line-width);
+  width: var(--line-width-s);
+  height: var(--line-width-s);
 }
 
 /* / This part is for the track (the part that the thumb slides across) / */

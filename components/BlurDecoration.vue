@@ -18,7 +18,7 @@
 
 .blob {
   border-radius: 50%;
-  filter: blur(300px) opacity(0.4);
+  filter: blur(30vmin) opacity(0.4);
   aspect-ratio: 1/1;
   pointer-events: none;
   transform-origin: center;
@@ -27,16 +27,18 @@
 .color {
   background-color: var(--color);
   position: absolute;
-  bottom: -50px;
-  left: 100px;
-  width: 500px;
+
+  bottom: -4.5vmin;
+  left: 9vmin;
+  width: 45vmin;
 }
 
 .highlight {
   background-color: var(--color);
   position: absolute;
-  top: -500px;
-  right: -400px;
-  width: 700px;
+
+  top: -45vmin;
+  right: -37vmin;
+  width: 65vmin;
 }
 </style>

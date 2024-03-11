@@ -38,7 +38,7 @@ inner-column {
   grid-template-rows: 1fr auto;
   justify-items: start;
   align-items: end;
-  min-height: 85vmin;
+  min-height: 80vh;
   position: relative;
   z-index: 1;
   padding-bottom: var(--space-3xl);
@@ -57,40 +57,65 @@ text-content {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 300px;
-  height: 300px;
-  rotate: 40deg;
+
+  --size: 55vmin;
+
+  width: var(--size);
+  height: var(--size);
+
+  rotate: 50deg;
   animation: rotate -4s 10s infinite linear alternate-reverse;
   background: var(--points);
   clip-path: var(--club-clip);
+
+  @media (min-width: 768px) {
+    --size: 35vmin;
+    top: 0px;
+    left: 0px;
+  }
 }
 
 .spade-bg {
   position: absolute;
-  bottom: 100px;
-  right: 20px;
-  width: 500px;
-  height: 500px;
+
+  bottom: 10px;
+  right: -50px;
+
+  --size: 55vmin;
+
+  width: var(--size);
+  height: var(--size);
   animation: rotate 10s infinite linear alternate-reverse;
   rotate: -40deg;
 
-  background: linear-gradient(0deg, transparent 0%, var(--paper) 60%),
+  background: linear-gradient(
+      40deg,
+      transparent,
+      hsla(240, 100%, 1%, 0.8),
+      var(--paper) 90%
+    ),
     var(--points);
   clip-path: var(--spade-clip);
   /* background-size: 30px; */
+
+  @media (min-width: 768px) {
+    --size: 55vmin;
+    bottom: 100px;
+    right: 20px;
+  }
 }
 
 @keyframes rotate {
   0% {
     /* transform: perspective(1000px) rotateY(0deg); */
-    transform: perspective(1000px) rotateX(45deg) rotateY(-35deg);
+    transform: perspective(1000px) rotateX(35deg) rotateY(-35deg);
 
-    background-position: 10% 10%;
+    /* background-position: 10% 10%; */
   }
 
   100% {
     /* transform: perspective(1000px) rotateY(0deg); */
-    transform: perspective(1000px) rotateX(50deg) rotateY(-30deg);
+    transform: perspective(1000px) rotateX(55deg) rotateY(-25deg);
     /* background-position: 100%; */
   }
 }
