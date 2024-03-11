@@ -48,7 +48,7 @@ body {
   color: var(--ink);
   position: relative;
 
-  filter: contrast(3) brightness(1) saturate(0.5);
+  filter: contrast(1.4) brightness(1.2) saturate(0.5);
 }
 
 main {
@@ -65,7 +65,7 @@ body::before {
   z-index: 100;
   background: var(--noise);
   background-attachment: fixed;
-
+  opacity: 0.5;
   /* Control contrast & brightess of grain texture for varying effects */
 
   /* Change Blend Mode for varying effects */

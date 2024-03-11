@@ -11,6 +11,16 @@ export default defineNuxtConfig({
     },
   },
 
+  modules: [
+    //pinia
+    [
+      "@pinia/nuxt",
+      {
+        autoImports: ["defineStore", "storeToRefs"],
+      },
+    ],
+  ],
+
   components: [
     {
       path: "~/components",
