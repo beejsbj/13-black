@@ -50,8 +50,6 @@ nav ul {
 }
 
 nav a {
-  color: var(--white);
-
   @media (max-width: 500px) {
     font-size: var(--step--1);
   }

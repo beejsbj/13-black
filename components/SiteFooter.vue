@@ -99,7 +99,14 @@ footer {
 
 .links inner-column {
   display: grid;
+  gap: var(--space-m);
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+nav ul {
+  margin-top: var(--space-s);
+  display: grid;
+  gap: var(--space-xs);
 }
 
 .logo {
