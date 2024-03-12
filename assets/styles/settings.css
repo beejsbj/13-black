@@ -20,13 +20,8 @@ html {
   --space-3xl: clamp(6rem, 5.81rem + 0.94vw, 6.75rem);
 
   /* Backgrounds */
-  --texture: url(../images/background/texture.svg);
 
   --noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='500'%3E%3Cscript xmlns=''/%3E%3Cfilter id='noise' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeBlend mode='screen'/%3E%3C/filter%3E%3Crect width='500' height='500' filter='url(%23noise)' opacity='0.5'/%3E%3Cscript xmlns=''/%3E%3C/svg%3E");
-
-  --checkers: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6' viewBox='0 0 8 8'%3E%3Cg fill='%23000000' fill-opacity='0.1'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
-
-  --diagnol: url("data:image/svg+xml,%3Csvg width='4' height='4' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 
   --points: url("data:image/svg+xml,%3Csvg width='16px' height='16px' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Cg transform='matrix(1,0,0,1,-1040.36,-403.458)'%3E%3Cg transform='matrix(1,0,0,1,70.6673,4.12972)'%3E%3Crect x='969.694' y='399.328' width='15.008' height='15.008' style='fill:none;'/%3E%3Cg transform='matrix(0.451471,0,0,0.451471,535.443,222.041)'%3E%3Ccircle cx='978.481' cy='409.311' r='7' style='fill:hsla(45, 69%, 96%, 1.00);'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
 
@@ -34,7 +29,7 @@ html {
       hsla(0, 0%, 2%, 0),
       hsla(0, 0%, 2%, 0.5),
       hsla(0, 0%, 2%, 0.7),
-      hsla(0, 0%, 2%, 1) 65%
+      hsla(0, 0%, 2%, 1)
     ),
     url("data:image/svg+xml,%3Csvg width='16px' height='16px' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Cg transform='matrix(1,0,0,1,-1040.36,-403.458)'%3E%3Cg transform='matrix(1,0,0,1,70.6673,4.12972)'%3E%3Crect x='969.694' y='399.328' width='15.008' height='15.008' style='fill:none;'/%3E%3Cg transform='matrix(0.451471,0,0,0.451471,535.443,222.041)'%3E%3Ccircle cx='978.481' cy='409.311' r='7' style='fill:hsla(45, 69%, 96%, 1.00);'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
 
@@ -368,10 +363,10 @@ html {
   --border: var(--line-width) solid var(--gray);
   --border-dark: var(--line-width) solid var(--gray-dark);
   --border-light: var(--line-width) solid var(--ink);
-  --border-color: var(--line-width) solid var(--color);
+  --border-color: var(--line-width) solid var(--color-lightest);
   --border-highlight: var(--line-width) solid var(--highlight);
 
   /* Shadows */
-  --shadow: var(--color) 0px 5px 1em -0.5em;
-  --shadow-selected: 2px 2px 1px var(--color);
+  --shadow: var(--color-lightest) 0px 5px 1em -0.5em;
+  --shadow-selected: 2px 2px 1px var(--color-lightest);
 }

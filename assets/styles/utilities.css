@@ -19,6 +19,10 @@
   background-image: var(--points);
 }
 
+.radial-points {
+  background-image: var(--radial-points);
+}
+
 /* borders */
 .border {
   border: var(--border);

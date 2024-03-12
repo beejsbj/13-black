@@ -25,7 +25,7 @@
 }
 
 .color {
-  background-color: var(--color);
+  background-color: var(--color-lightest);
   position: absolute;
 
   bottom: -4.5vmin;
@@ -34,7 +34,7 @@
 }
 
 .highlight {
-  background-color: var(--color);
+  background-color: var(--color-lightest);
   position: absolute;
 
   top: -45vmin;

@@ -39,6 +39,10 @@
 
 /* button */
 
+button {
+  background: transparent;
+}
+
 .button {
   background: transparent;
   border: unset;
@@ -55,7 +59,7 @@
 .button::before {
   /*frame*/
   content: "";
-  background: var(--color);
+  background: var(--color-lightest);
   /* 	aspect-ratio: 1 / 1.5; */
 
   transform-origin: right;
@@ -92,6 +96,24 @@
   transition: 0.1s;
 }
 
+.button-filled {
+  background: var(--color);
+  color: var(--paper);
+  padding: 0.5em 2em;
+  border-radius: var(--corners);
+  font-weight: 700;
+}
+
+.button-filled.ink {
+  background: var(--ink);
+}
+
+button:disabled {
+  filter: grayscale(1) brightness(0.4);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 /*  */
 
 :is(a, button).text {
@@ -116,7 +138,7 @@ p :is(a, button).text {
   bottom: 0;
   left: 0;
 
-  background: var(--color);
+  background: var(--color-lightest);
   transition: 0.2s;
 }
 

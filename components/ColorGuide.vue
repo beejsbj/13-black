@@ -68,20 +68,7 @@ const colors = ref([
     },
   ],
 
-  [
-    {
-      name: "Success",
-      variable: "--success",
-    },
-    {
-      name: "Warning",
-      variable: "--warning",
-    },
-    {
-      name: "Error",
-      variable: "--error",
-    },
-  ],
+  [],
   [
     {
       name: "Gradient Dark",
@@ -101,6 +88,10 @@ const colors = ref([
       name: "Points",
       class: "points",
     },
+    {
+      name: "Radial Points",
+      class: "radial-points",
+    },
   ],
 ]);
 
@@ -113,6 +104,10 @@ watch(hue, (newVal, oldVal) => {
     `${newVal - 160}deg`
   );
 });
+
+function getColorCode(color) {
+  //   return getComputedStyle(document.documentElement).getPropertyValue(color);
+}
 </script>
 
 <template>
@@ -141,24 +136,11 @@ watch(hue, (newVal, oldVal) => {
               <div class="pallete" :class="color.class" />
               <div class="color-name">
                 <code>.{{ color.class }}</code>
+                <code>{{ getColorCode(color.variable) }}</code>
               </div>
             </template>
           </li>
         </ul>
-      </div>
-      <div class="color slider">
-        <form-field>
-          <FormKit
-            type="range"
-            v-model="hue"
-            min="0"
-            max="360"
-            step="1"
-            :label="`Hue: ${hue}`"
-            label-class="$reset notice-voice"
-            help="You can change the hue of the colors by using the slider below."
-          />
-        </form-field>
       </div>
     </inner-column>
   </section>
