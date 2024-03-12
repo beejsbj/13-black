@@ -80,26 +80,29 @@ const socials = ref({
       </inner-column>
     </section>
     <picture class="logo">
-      <img src="@/assets/images/footer-logo.svg" alt="13Black" />
+      <img src="@/assets/images/logo-text.svg" alt="13Black" />
     </picture>
   </footer>
 </template>
+
 <style scoped>
 footer {
-  padding-top: var(--space-l);
-  background: linear-gradient(0deg, transparent, var(--paper) 50%),
+  background: linear-gradient(0deg, transparent, var(--paper) 60%),
     var(--points);
-  /* color: white; */
+  filter: invert(1);
+  /* background: var(--ink); */
+  color: white;
   position: sticky;
   z-index: -1;
-  /* position: relative; */
   bottom: 0;
   overflow: hidden;
 }
 
 .links inner-column {
+  padding-top: var(--space-3xl);
+
   display: grid;
-  gap: var(--space-m);
+  gap: var(--space-xl);
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
@@ -107,9 +110,10 @@ nav ul {
   margin-top: var(--space-s);
   display: grid;
   gap: var(--space-xs);
+  justify-content: start;
 }
 
-.logo {
+picture.logo {
   width: 100%;
 
   position: relative;

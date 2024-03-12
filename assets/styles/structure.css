@@ -8,13 +8,15 @@ inner-column {
   display: block;
   width: 100%;
   max-width: 1200px; /* could be a variable in settings */
+  max-width: 1400px; /* could be a variable in settings */
+
   margin-right: auto;
   margin-left: auto;
   padding: var(--space-xl) var(--space-s);
 }
 
 inner-column.wide {
-  max-width: 1400px; /* could be a variable in settings */
+  max-width: 1600px; /* could be a variable in settings */
 }
 
 inner-column.narrow {
@@ -23,6 +25,7 @@ inner-column.narrow {
 
 inner-column.full {
   max-width: 100%;
+  padding: var(--space-xl) 0;
 }
 
 /*.site-header {
