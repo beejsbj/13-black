@@ -12,12 +12,12 @@ const navs = ref([
         link: "#about-section",
       },
       {
-        name: "Events",
-        link: "#event-section",
+        name: "Services",
+        link: "#services-section",
       },
       {
-        name: "Speakers",
-        link: "#speaker-section",
+        name: "Contact",
+        link: "#contact-section",
       },
       {
         name: "Register",
@@ -31,11 +31,11 @@ const navs = ref([
     links: [
       {
         name: "Email Form",
-        link: "https://desci.world/contact",
+        link: "",
       },
       {
         name: "Presentation",
-        link: "https://drive.google.com/file/d/1t4aTGJThBM_6ez_wcC_5gmh46j0IcLtn/view?usp=sharing",
+        link: "",
       },
     ],
   },

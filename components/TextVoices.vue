@@ -164,7 +164,7 @@ onMounted(() => {
 
 .grid-2 {
   display: grid;
-  gap: var(--space-xl);
+  gap: var(--space-3xl);
   grid-template-columns: 1fr 1fr;
 }
 

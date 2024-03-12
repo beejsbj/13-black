@@ -33,31 +33,17 @@ html {
 body {
   position: relative;
 
-  background: linear-gradient(
-    130deg,
-    hsla(240, 100%, 1%, 0.6) 10%,
-    hsla(240, 100%, 1%, 0.8),
-    hsla(240, 100%, 1%, 0.6) 50%,
-    hsla(240, 100%, 1%, 0.8),
-    hsla(240, 100%, 1%, 0.6) 90%,
-    hsla(240, 100%, 1%, 0.8)
-  );
-
   background: var(--paper);
-
   color: var(--ink);
-  position: relative;
 
+  /* Control contrast & brightess of grain texture for varying effects */
   filter: contrast(1.4) brightness(1.2) saturate(0.5);
-}
 
-main {
-  background: var(--paper);
-  /* box-shadow: var(--shadow); */
+  /* Change Blend Mode for varying effects */
+  /* mix-blend-mode: luminosity; */
 }
 
 body::before {
-  /* mix-blend-mode: luminosity; */
   content: "";
   position: fixed;
   inset: 0;
@@ -66,9 +52,11 @@ body::before {
   background: var(--noise);
   background-attachment: fixed;
   opacity: 0.5;
-  /* Control contrast & brightess of grain texture for varying effects */
+}
 
-  /* Change Blend Mode for varying effects */
+main {
+  background: var(--paper);
+  /* box-shadow: var(--shadow); */
 }
 
 #__nuxt,

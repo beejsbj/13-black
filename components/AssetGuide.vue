@@ -21,13 +21,13 @@ const assets = [
     image: "/images/interface/menu.svg",
   },
   {
-    spade: "Spade",
+    name: "Spade",
     image: "/images/background/spade.svg",
     class: "spade",
     isMask: true,
   },
   {
-    spade: "Clubs",
+    name: "Clubs",
     image: "/images/background/clubs.svg",
     class: "clubs",
     isMask: true,
@@ -62,6 +62,38 @@ function downloadSVG(asset) {
             </button>
           </li>
         </ul>
+
+        <div class="css-code">
+          <p>CSS on how to implement the noise texture through the site</p>
+
+          <pre>
+			<code>
+body {
+	position: relative;
+
+	background: var(--paper);
+	color: var(--ink);
+
+	/* Control contrast & brightess of grain texture for varying effects */
+	filter: contrast(1.4) brightness(1.2) saturate(0.5);
+
+	/* Change Blend Mode for varying effects */
+	/* mix-blend-mode: luminosity; */
+}
+
+	body::before {
+	content: "";
+	position: fixed;
+	inset: 0;
+	pointer-events: none;
+	z-index: 100;
+	background: var(--noise);
+	background-attachment: fixed;
+	opacity: 0.5;
+}
+			</code>
+		  </pre>
+        </div>
       </div>
     </inner-column>
   </section>
@@ -81,7 +113,7 @@ function downloadSVG(asset) {
 li {
   display: grid;
   align-content: end;
-  gap: var(--space-3xs);
+  gap: var(--space-s);
 
   //   text-align: center;
 }
@@ -101,5 +133,9 @@ div.spade {
 
 div.clubs {
   mask-image: url("/images/background/clubs.svg");
+}
+
+.css-code {
+  margin-top: var(--space-xl);
 }
 </style>

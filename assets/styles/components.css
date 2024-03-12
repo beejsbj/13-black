@@ -121,6 +121,7 @@ button:disabled {
   text-decoration: none;
   padding: 0.25em 0.5em;
   position: relative;
+  font-family: var(--font-body);
 
   isolation: isolate;
 }
