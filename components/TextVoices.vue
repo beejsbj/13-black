@@ -165,7 +165,10 @@ onMounted(() => {
 .grid-2 {
   display: grid;
   gap: var(--space-3xl);
-  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .unbounded h4.attention-voice {
