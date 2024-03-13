@@ -150,11 +150,12 @@ function getColorCode(color) {
 .colors {
   margin-top: var(--space-xl);
   display: grid;
-  gap: var(--space-xl);
+  gap: var(--space-s);
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: var(--space-xl);
   }
 }
 div.pallete {

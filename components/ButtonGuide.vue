@@ -68,8 +68,13 @@ ul {
   align-items: center;
   justify-items: center;
 
-  gap: var(--space-xl);
+  gap: var(--space-l);
 
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: var(--space-xl);
+  }
 }
 </style>
