@@ -173,7 +173,7 @@ onMounted(() => {
 }
 
 .lato h4.attention-voice {
-  font-family: var(--font-heading);
+  font-family: var(--font-body);
 }
 
 div.text-voices {
