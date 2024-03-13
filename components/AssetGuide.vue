@@ -138,4 +138,16 @@ div.clubs {
 .css-code {
   margin-top: var(--space-xl);
 }
+
+pre {
+  white-space: pre-wrap;
+}
+
+code {
+  font-size: var(--step--2) !important;
+
+  @media (min-width: 768px) {
+    font-size: var(--step-0) !important;
+  }
+}
 </style>
