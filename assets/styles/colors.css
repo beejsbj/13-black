@@ -60,13 +60,13 @@ html {
   --ink: var(--white);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     --paper: var(--white);
     --ink: var(--black);
     --color: hsla(var(--hue), var(--saturation), 35%, 1);
   }
-}
+} */
 
 /*@media (prefers-color-scheme: light) {
 	 html {
